@@ -10,6 +10,32 @@
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  background-color: slategray;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.burger-btn-icon {
 }
 
 .header-line {
@@ -18,11 +44,6 @@
 
 .header__logo {
   margin-right: 93px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
 }
 
 .header__logo {
@@ -49,6 +70,7 @@
 
 .menu__list {
   display: flex;
+  display: none;
 }
 
 .menu__item:not(:last-child) {
@@ -107,6 +129,8 @@
   display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  display: none;
+
   &:focus,
   &:hover {
     color: var(--header-color);
@@ -120,6 +144,7 @@
 
 .header__mail {
   display: flex;
+  display: none;
   align-items: center;
 
   font-weight: 500;
