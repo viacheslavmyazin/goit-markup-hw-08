@@ -1,0 +1,16 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  position: fixed;
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

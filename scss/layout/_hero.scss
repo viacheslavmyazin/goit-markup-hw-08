@@ -1,0 +1,133 @@
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-headlines {
+  margin-bottom: 10px;
+  width: 270px;
+  margin-top: 30px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.about-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+.hero-icon-list {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.hero-icon-list {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.hero-icon-item {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.hero-icon-menu {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-left: -30px;
+  padding-bottom: 30px;
+}
+
+.hero-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headlines-text-color);
+}
+
+.hero-pages {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.hero-after-title {
+  width: 270px;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav__adress .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
+.hero {
+  background-color: #2f303a;
+  padding: 200px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.headlines {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+.hero-headlines {
+  margin: 0 auto;
+  width: 696px;
+  margin-bottom: 40px;
+}
+
+.button-hero {
+  border: none;
+}
+
+.button-service {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+  background-color: #2196f3;
+
+  font-family: inherit;
+  cursor: pointer;
+}
