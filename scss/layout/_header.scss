@@ -12,10 +12,10 @@
   padding-bottom: 25px;
   width: 100%;
 
-  @media screen and (min-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding-top: 16px;
+  //   padding-bottom: 16px;
+  // }
 
   @media screen and (min-width: 768px) {
     padding-top: 26px;
@@ -41,6 +41,34 @@
   padding: 0;
 }
 .burger-btn-icon {
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+
+  width: 100vw;
+  height: 100vh;
+}
+.mobile-close-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.mobile-btn-icon {
 }
 
 .header-line {
