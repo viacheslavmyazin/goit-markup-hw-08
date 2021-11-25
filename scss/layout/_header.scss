@@ -39,6 +39,10 @@
   cursor: pointer;
   border: none;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .burger-btn-icon {
 }
@@ -46,6 +50,11 @@
 .mobile-menu {
   position: fixed;
   z-index: 100;
+  background-color: violet;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
   top: 0;
   left: 0;
@@ -54,6 +63,13 @@
   width: 100vw;
   height: 100vh;
 }
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
 .mobile-close-btn {
   position: absolute;
   cursor: pointer;
