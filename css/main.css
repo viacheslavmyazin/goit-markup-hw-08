@@ -313,6 +313,12 @@ img {
   height: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-form-block {
+    width: 480px;
+  }
+}
+
 .mobile-menu-item {
   display: block;
 }
