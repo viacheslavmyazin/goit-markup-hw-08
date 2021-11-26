@@ -1,5 +1,12 @@
 // mobile FORM
-.mobile-munu-list {
+.mobile-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mobile-menu-list {
 }
 
 .mobile-menu-item {
@@ -10,7 +17,7 @@
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  display: block;
+
   color: #212121;
   // margin-bottom: 32px;
 }
@@ -22,6 +29,63 @@
 
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-connect {
+}
+
+.mobile-connect-list {
+}
+
+.mobile-connect-tel {
+  margin-bottom: 32px;
+}
+
+.mobile-connect-mail {
+  margin-bottom: 64px;
+}
+
+.mobile-link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.mobile-link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.mobile-menu-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-social-item {
+}
+
+.mobile-menu-social-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
+.mobile-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
 }
 
 // END mobile form
@@ -94,6 +158,11 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }
 .burger-btn-icon {
 }
@@ -107,9 +176,10 @@
   visibility: hidden;
   pointer-events: none;
 
+  padding: 48px 0 48px 25px;
+
   top: 0;
   left: 0;
-  padding: 48px 40px;
 
   width: 100vw;
   height: 100vh;
@@ -134,6 +204,11 @@
   cursor: pointer;
   border: none;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }
 .mobile-btn-icon {
 }

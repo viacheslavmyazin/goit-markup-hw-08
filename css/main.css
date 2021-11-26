@@ -306,6 +306,13 @@ img {
   fill: #ffffff;
 }
 
+.mobile-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .mobile-menu-item {
   display: block;
 }
@@ -315,7 +322,6 @@ img {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  display: block;
   color: #212121;
 }
 
@@ -326,6 +332,49 @@ img {
 
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-connect-tel {
+  margin-bottom: 32px;
+}
+
+.mobile-connect-mail {
+  margin-bottom: 64px;
+}
+
+.mobile-link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-menu-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-social-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
+.mobile-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .web {
@@ -406,6 +455,10 @@ img {
   }
 }
 
+.burger-btn:hover, .burger-btn:focus {
+  fill: #2196f3;
+}
+
 .mobile-menu {
   position: fixed;
   z-index: 100;
@@ -413,9 +466,9 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  padding: 48px 0 48px 25px;
   top: 0;
   left: 0;
-  padding: 48px 40px;
   width: 100vw;
   height: 100vh;
 }
@@ -437,6 +490,10 @@ img {
   cursor: pointer;
   border: none;
   padding: 0;
+}
+
+.mobile-close-btn:hover, .mobile-close-btn:focus {
+  fill: #2196f3;
 }
 
 .header-line {
