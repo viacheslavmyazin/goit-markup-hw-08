@@ -1152,7 +1152,7 @@ img {
 }
 
 .subscribe-form__button {
-  display: flex;
+  display: inline-flex;
   border: none;
   width: 200px;
   height: 50px;
