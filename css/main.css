@@ -24,7 +24,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -520,10 +526,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-.nav__adress {
-  display: flex;
 }
 
 @media screen and (min-width: 768px) {
