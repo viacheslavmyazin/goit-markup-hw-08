@@ -837,6 +837,12 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-photo:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team-photo-description {
   padding-top: 30px;
   padding-bottom: 30px;
