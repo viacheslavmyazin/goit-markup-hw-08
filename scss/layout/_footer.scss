@@ -24,10 +24,22 @@
 
 .footer-adress {
   margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 }
 
 .footer__list .footer__item + .footer__item {
   margin-top: 9px;
+}
+
+.footer__item {
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-title {
@@ -39,6 +51,16 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.social-footer {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__link {
@@ -70,6 +92,11 @@
 .footer-container {
   display: flex;
   align-items: baseline;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .footer-icon__link {
@@ -98,7 +125,14 @@
 }
 
 .address-footer {
-  margin-right: 70px;
+  // margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 /* Подписатся футер */
@@ -106,6 +140,14 @@
 .subscribe {
   margin-left: auto;
   display: flex;
+}
+
+.subscribe-form {
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .subscribe-form-pages {
@@ -118,6 +160,10 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .modal-form__mail {
@@ -141,15 +187,23 @@
     outline: none;
     border-color: var(--header-color);
   }
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .subscribe-form__button {
-  display: inline-flex;
+  // display: inline-flex;
+  display: flex;
   border: none;
   width: 200px;
   height: 50px;
   padding: 10px 28px 10px 29px;
   cursor: pointer;
+
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 16px;
@@ -164,6 +218,10 @@
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 
 .submit-icon {
