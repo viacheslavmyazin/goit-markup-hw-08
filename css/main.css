@@ -890,10 +890,21 @@ img {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .customer-icon-list {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+.customer-icon-list {
+  margin-top: 30px;
+}
+
 .customer-link {
-  width: 170px;
+  align-items: center;
+  justify-content: center;
   height: 92px;
-  display: block;
+  display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -910,8 +921,13 @@ img {
 
 .customer-list {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  margin-right: -30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .customer-list {
+    flex-wrap: wrap;
+  }
 }
 
 .customer-icon-item {
@@ -920,15 +936,17 @@ img {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: 32px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .headline-customers {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--headlines-text-color);
