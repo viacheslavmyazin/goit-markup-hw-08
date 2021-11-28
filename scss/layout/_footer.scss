@@ -2,17 +2,18 @@
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.93;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
 
 .footer-adress-social {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 60px;
+    align-items: baseline;
     display: flex;
+    margin-bottom: 60px;
   }
 }
 
@@ -140,6 +141,10 @@
 
   @media screen and (max-width: 1199px) {
     align-items: center;
+    // margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
