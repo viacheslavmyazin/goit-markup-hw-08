@@ -125,6 +125,10 @@
     border-radius: 2px;
     margin-right: 9px;
   }
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .modal-form-checkbox:checked + .modal-form-check-box-label::before {
