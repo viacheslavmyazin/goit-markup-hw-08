@@ -30,7 +30,7 @@
           </a>
           <ul class="menu__list list">
             <li class="menu__item">
-              <a class="menu__link link current" href="./index.html">Студия</a>
+              <a class="menu__link current link current" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="./portfolio.html">Портфолио</a>
@@ -189,19 +189,76 @@
           <ul class="photo-list list">
             <li class="activity-photo">
               <div class="activity-photo-wrap">
-                <img src="./images/img1.jpg" alt="програмирование" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-1-desktop.webp    1x,
+                      ./images/occupation/occ-1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-1-desktop.jpg    1x,
+                      ./images/occupation/occ-1-desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/img1.jpg" alt="програмирование" />
+                </picture>
+
                 <p class="activity-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="activity-photo">
               <div class="activity-photo-wrap">
-                <img src="./images/img2.jpg" alt="мобильные версии" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-2-desktop.webp    1x,
+                      ./images/occupation/occ-2-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-2-desktop.jpg    1x,
+                      ./images/occupation/occ-2-desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/img2.jpg" alt="мобильные версии" />
+                </picture>
+
                 <p class="activity-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="activity-photo">
               <div class="activity-photo-wrap">
-                <img src="./images/img3.jpg" alt="дизайн" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-3-desktop.webp    1x,
+                      ./images/occupation/occ-3-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-3-desktop.jpg    1x,
+                      ./images/occupation/occ-3-desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/img3.jpg" alt="дизайн" />
+                </picture>
+
                 <p class="activity-text">Дизайнерские решения</p>
               </div>
             </li>

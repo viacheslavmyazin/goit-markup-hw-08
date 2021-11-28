@@ -8,6 +8,10 @@
 }
 
 .footer-adress-social {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 100%;
     justify-content: space-around;
@@ -68,6 +72,11 @@
 }
 
 .social-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
