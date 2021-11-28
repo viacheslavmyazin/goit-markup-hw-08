@@ -21,22 +21,73 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div class="container"></div>
     <header class="header header-line">
       <div class="container header-container">
         <nav class="header-nav">
           <a lang="en" href="index.html" class="header__logo link">
             <span class="web link">Web</span>Studio
           </a>
-          <ul class="list menu__list">
-            <li class="menu__item"><a class="menu__link link" href="./index.html">Студия</a></li>
+          <ul class="menu__list list">
             <li class="menu__item">
-              <a class="menu__link link current" href="./portfolio.html">Портфолио</a>
+              <a class="menu__link link current" href="./index.html">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item"><a class="menu__link link" href="">Контакты</a></li>
           </ul>
         </nav>
+
+        <div class="mobile-menu" data-menu>
+          <div class="mobile-form-block container">
+            <button class="mobile-close-btn" data-menu-close>
+              <svg class="mobile-btn-icon" width="40" height="40">
+                <use href="./images/sprite.svg#close-mobile-icon"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./index.html">Студия</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="mobile-connect">
+              <ul class="mobile-connect-list list">
+                <li class="mobile-connect-tel">
+                  <a class="mobile-link-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-connect-mail">
+                  <a class="mobile-link-mail link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu-social list">
+                <li class="mobile-menu-social-item">
+                  <a class="mobile-social-link link" href="#">Instagram</a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a class="mobile-social-link link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a class="mobile-social-link link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a class="mobile-social-link link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="header-connect">
-          <ul class="list nav__adress">
+          <ul class="nav__adress list">
             <li class="nav__item">
               <a class="header__mail link nav-connect" href="mailto:info@devstudio.com">
                 <svg class="icon-mail" width="16" height="12">
@@ -55,6 +106,14 @@
             </li>
           </ul>
         </div>
+        <!-- start MB menu -->
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+
+        <!-- End MB menu -->
       </div>
     </header>
     <main>
@@ -81,7 +140,54 @@
             <li class="photo-item">
               <div class="photo-item-wrap">
                 <a href="" class="photo-focus link">
-                <img src="./images/portfolio/techno-crack.jpg" alt="техно-кряк" width="370" />
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-1-desktop.webp    1x,
+                    ../images/works/works-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-1-desktop.jpg    1x,
+                    ../images/works/works-1-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-1-tablet.webp    1x,
+                    ../images/works/works-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-1-tablet.jpg    1x,
+                    ../images/works/works-1-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-1.webp 1x, ../images/works/works-1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-1.jpg 1x, ../images/works/works-1@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/techno-crack.jpg" alt="техно-кряк"/>
+              </picture>
+                
                 <p class="photo-text">
                   Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -96,7 +202,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/bascketbal.jpg" alt="Баскетбол" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-2-desktop.webp    1x,
+                    ../images/works/works-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-2-desktop.jpg    1x,
+                    ../images/works/works-2-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-2-tablet.webp    1x,
+                    ../images/works/works-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-2-tablet.jpg    1x,
+                    ../images/works/works-2-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-2.webp 1x, ../images/works/works-2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-2.jpg 1x, ../images/works/works-2@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/bascketbal.jpg" alt="Баскетбол"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 class="photo-headline">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -107,7 +260,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/seafood.jpg" alt="Ресторан" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-3-desktop.webp    1x,
+                    ../images/works/works-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-3-desktop.jpg    1x,
+                    ../images/works/works-3-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-3-tablet.webp    1x,
+                    ../images/works/works-3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-3-tablet.jpg    1x,
+                    ../images/works/works-3-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-3.webp 1x, ../images/works/works-3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-3.jpg 1x, ../images/works/works-3@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/seafood.jpg" alt="Ресторан"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 class="photo-headline">Ресторан <span lang="en">Seafood</span></h3>
                   <p class="photo-pages">Приложение</p>
@@ -116,7 +316,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/prime.jpg" alt="Наушники" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-4-desktop.webp    1x,
+                    ../images/works/works-4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-4-desktop.jpg    1x,
+                    ../images/works/works-4-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-4-tablet.webp    1x,
+                    ../images/works/works-4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-4-tablet.jpg    1x,
+                    ../images/works/works-4-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-4.webp 1x, ../images/works/works-4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-4.jpg 1x, ../images/works/works-4@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/prime.jpg" alt="Наушники"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 class="photo-headline">Проект <span lang="en">Prime</span></h3>
                   <p class="photo-pages">Маркетинг</p>
@@ -125,7 +372,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/boxes.jpg" alt="коробки" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-5-desktop.webp    1x,
+                    ../images/works/works-5-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-5-desktop.jpg    1x,
+                    ../images/works/works-5-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-5-tablet.webp    1x,
+                    ../images/works/works-5-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-5-tablet.jpg    1x,
+                    ../images/works/works-5-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-5.webp 1x, ../images/works/works-5@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-5.jpg 1x, ../images/works/works-5@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/boxes.jpg" alt="коробки"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 class="photo-headline">Проект <span lang="en">Boxes</span></h3>
                   <p class="photo-pages">Приложение</p>
@@ -134,7 +428,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/borders.jpg" alt="интерактивная карта" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-6-desktop.webp    1x,
+                    ../images/works/works-6-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-6-desktop.jpg    1x,
+                    ../images/works/works-6-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-6-tablet.webp    1x,
+                    ../images/works/works-6-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-6-tablet.jpg    1x,
+                    ../images/works/works-6-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-6.webp 1x, ../images/works/works-6@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-6.jpg 1x, ../images/works/works-6@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/borders.jpg" alt="интерактивная карта"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 lang="en" class="photo-headline">Inspiration has no Borders</h3>
                   <p class="photo-pages">Веб-сайт</p>
@@ -143,7 +484,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/limited-edition.jpg" alt="издание" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-7-desktop.webp    1x,
+                    ../images/works/works-7-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-7-desktop.jpg    1x,
+                    ../images/works/works-7-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-7-tablet.webp    1x,
+                    ../images/works/works-7-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-7-tablet.jpg    1x,
+                    ../images/works/works-7-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-7.webp 1x, ../images/works/works-7@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-7.jpg 1x, ../images/works/works-7@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/limited-edition.jpg" alt="издание"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 class="photo-headline">Издание <span lang="en">Limited Edition</span></h3>
                   <p class="photo-pages">Дизайн</p>
@@ -152,7 +540,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/lab.jpg" alt="лаборатория" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-8-desktop.webp    1x,
+                    ../images/works/works-8-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-8-desktop.jpg    1x,
+                    ../images/works/works-8-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-8-tablet.webp    1x,
+                    ../images/works/works-8-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-8-tablet.jpg    1x,
+                    ../images/works/works-8-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-8.webp 1x, ../images/works/works-8@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-8.jpg 1x, ../images/works/works-8@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/lab.jpg" alt="лаборатория"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 class="photo-headline">Проект <span lang="en">LAB</span></h3>
                   <p class="photo-pages">Маркетинг</p>
@@ -161,7 +596,54 @@
             </li>
             <li class="photo-item">
               <a href="" class="photo-focus link">
-                <img src="./images/portfolio/business.jpg" alt="бизнес" width="370" />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-9-desktop.webp    1x,
+                    ../images/works/works-9-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ../images/works/works-9-desktop.jpg    1x,
+                    ../images/works/works-9-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-9-tablet.webp    1x,
+                    ../images/works/works-9-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../images/works/works-9-tablet.jpg    1x,
+                    ../images/works/works-9-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-9.webp 1x, ../images/works/works-9@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="../images/works/works-9.jpg 1x, ../images/works/works-9@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img src="./images/portfolio/business.jpg" alt="бизнес"/>
+              </picture>
+                
                 <div class="photo-description">
                   <h3 lang="en" class="photo-headline">Growing Business</h3>
                   <p class="photo-pages">Приложение</p>
@@ -262,5 +744,6 @@
 
 
   </footer>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
