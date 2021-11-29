@@ -200,7 +200,7 @@
 }
 
 .modal-form__mail {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -223,6 +223,10 @@
 
   @media screen and (max-width: 1199px) {
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 350px;
   }
 }
 
