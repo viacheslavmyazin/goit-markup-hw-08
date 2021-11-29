@@ -7,9 +7,6 @@
   height: 100%;
 }
 
-.mobile-menu-list {
-}
-
 .mobile-menu-item {
   display: block;
 }
@@ -20,7 +17,6 @@
   letter-spacing: 0.02em;
 
   color: #212121;
-  // margin-bottom: 32px;
 }
 
 .mobile-menu-link:hover,
@@ -30,12 +26,6 @@
 
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mobile-connect {
-}
-
-.mobile-connect-list {
 }
 
 .mobile-connect-tel {
@@ -68,9 +58,6 @@
 .mobile-menu-social {
   display: flex;
   flex-wrap: wrap;
-}
-
-.mobile-menu-social-item {
 }
 
 .mobile-menu-social-item:not(:last-child) {
