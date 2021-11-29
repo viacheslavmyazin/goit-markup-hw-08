@@ -2,6 +2,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+html,
+body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
+
 p,
 h1,
 h2,
