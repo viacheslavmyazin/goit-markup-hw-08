@@ -247,6 +247,11 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--headlines-text-color);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .header-connect {

@@ -10,6 +10,7 @@
 .footer-adress-social {
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    display: flex;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -72,10 +73,10 @@
 }
 
 .social-footer {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: auto;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   margin-left: auto;
+  // }
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
@@ -110,7 +111,7 @@
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  // align-items: baseline;
 
   @media screen and (max-width: 1199px) {
     align-items: center;
@@ -147,6 +148,10 @@
   // margin-right: 70px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 
   @media screen and (max-width: 1199px) {
     align-items: center;
