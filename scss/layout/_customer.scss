@@ -1,6 +1,5 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
   align-items: center;
 
   @media screen and (min-width: 1200px) {
@@ -13,10 +12,10 @@
     padding-bottom: 60px;
   }
 
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
 }
 
 .customer-icon-list:not(:last-child) {

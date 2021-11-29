@@ -62,18 +62,19 @@
 }
 
 .about {
+  padding: 60px 0px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
-  @media screen and (min-width: 768px) {
-    padding: 60px 0px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding: 60px 0px;
+  // }
 
-  @media screen and (min-width: 480px) {
-    padding: 60px 0px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding: 60px 0px;
+  // }
 }
 
 .about-headlines {
@@ -198,7 +199,7 @@
   color: var(--primary-title-color);
 
   @media screen and (max-width: 1199px) {
-    width: 360px;
+    // width: 360px;
     font-size: 26px;
     line-height: 1.62;
 
@@ -209,7 +210,7 @@
 
 .hero-headlines {
   margin: 0 auto;
-  width: 696px;
+
   margin-bottom: 40px;
 }
 
