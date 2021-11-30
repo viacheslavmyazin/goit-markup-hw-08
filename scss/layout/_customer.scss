@@ -2,14 +2,13 @@
   padding: 60px 0;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 
   // @media screen and (min-width: 480px) {
@@ -34,6 +33,10 @@
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
   }
 }
 
@@ -95,4 +98,9 @@
   letter-spacing: 0.03em;
 
   color: var(--headlines-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

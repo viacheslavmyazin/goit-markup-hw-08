@@ -831,12 +831,6 @@ img {
   color: var(--headlines-text-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .hero-item {
-    text-align: center;
-  }
-}
-
 .hero-pages {
   font-weight: 400;
   font-size: 14px;
@@ -974,13 +968,6 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team {
     padding-top: 60px;
@@ -988,13 +975,20 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .about-teams {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .about-teams {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1004,9 +998,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .about-teams {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1073,6 +1067,13 @@ img {
   color: var(--headlines-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .headline-teams {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .headline-team {
   font-weight: 500;
   font-size: 16px;
@@ -1094,17 +1095,17 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .customers {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1126,6 +1127,12 @@ img {
   .customer-icon-list {
     flex-wrap: wrap;
     flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-icon-list {
+    margin-top: 50px;
   }
 }
 
@@ -1179,6 +1186,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--headlines-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .headline-customers {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .logo__footer {

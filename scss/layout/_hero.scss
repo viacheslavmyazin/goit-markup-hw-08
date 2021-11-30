@@ -164,10 +164,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--headlines-text-color);
-
-  @media screen and (min-width: 1200px) {
-    text-align: center;
-  }
 }
 
 .hero-pages {
