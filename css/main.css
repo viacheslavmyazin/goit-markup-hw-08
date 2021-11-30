@@ -1566,14 +1566,23 @@ img {
   color: var(--headlines-text-color);
 }
 
+.photo-headline-letter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  padding-bottom: 4px;
+  color: var(--headlines-text-color);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .photo-headline-letter {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
     letter-spacing: 0;
-    padding-bottom: 4px;
-    color: var(--headlines-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo-headline-letter {
+    letter-spacing: 0;
   }
 }
 
