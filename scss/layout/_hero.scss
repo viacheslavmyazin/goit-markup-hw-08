@@ -149,6 +149,14 @@
   margin-bottom: 25px;
 }
 
+.hero-menu {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .hero-icon-menu {
   display: flex;
 
@@ -164,6 +172,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--headlines-text-color);
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .hero-pages {

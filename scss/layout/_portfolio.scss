@@ -82,7 +82,7 @@
 }
 
 .photo-headline-letter {
-  @media screen (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;

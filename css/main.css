@@ -815,6 +815,12 @@ img {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .hero-menu:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .hero-icon-menu {
   display: flex;
   flex-wrap: wrap;
@@ -829,6 +835,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--headlines-text-color);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-item {
+    text-align: center;
+  }
 }
 
 .hero-pages {
@@ -1554,13 +1566,15 @@ img {
   color: var(--headlines-text-color);
 }
 
-.photo-headline-letter {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0;
-  padding-bottom: 4px;
-  color: var(--headlines-text-color);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .photo-headline-letter {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0;
+    padding-bottom: 4px;
+    color: var(--headlines-text-color);
+  }
 }
 
 .photo-pages {
